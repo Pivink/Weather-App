@@ -2,7 +2,6 @@
 
 Welcome to the **Weather App**, a sleek, modern, and responsive application built with **React** + **Tailwind CSS**. Designed to deliver real-time weather updates, forecasts, and interactive features with a user-friendly interface.
 
-![App Screenshot](./src/assets/screenShot.png)
 
 ## 🚀 Features
 
@@ -95,8 +94,12 @@ Made with 💙 by **Pivink**
 
 ## 📸 Preview
 
-![Weather App UI](./src/assets/pivink.jpg)
+![App Screenshot](./src/assets/screenShot.png)
 
+<br/>
+<br/>
+
+![App Screenshot](./src/assets/screenShot1.png)
 ---
 
 ## 📄 License
