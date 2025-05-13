@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #225164;
+  --color-secondary: black;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-neutral-800 bg-neutral-50;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight text-primary;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  p {
+    @apply mb-4 leading-relaxed;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-primary text-white hover:shadow-lg focus:ring-accent-500;
+  }
+
+  .btn-secondary {
+    @apply bg-gradient-secondary text-white hover:shadow-lg focus:ring-primary;
+  }
+
+  .container-custom {
+    @apply px-4 mx-auto max-w-7xl;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-card p-6 transition duration-300 hover:shadow-card-hover;
+  }
+
+  .input {
+    @apply w-full px-4 py-3 border border-neutral-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition;
+  }
+
+  .section {
+    @apply py-16 md:py-24 mt-16; /* Added mt-16 for navbar spacing */
+  }
+
+  .nav-link {
+    @apply text-white hover:text-accent-300 transition duration-300 px-4 py-2 rounded-md;
+  }
+
+  .nav-link-active {
+    @apply text-accent-500 font-medium;
+  }
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideUp {
+  0% { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(90deg, #F38128 0%, #DB6711 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+}
+main {
+  padding-top: 65px; /* Match with navbar height */
+}
+
+
+@media (max-width: 767px) {
+    main {
+        padding-top: 60px;
+    }
+}
