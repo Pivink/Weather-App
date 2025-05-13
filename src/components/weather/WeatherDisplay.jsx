@@ -6,13 +6,13 @@ const WeatherDisplay = ({ weather, cityImage }) => {
     <div className="slide-up">
       {/* City image and basic info */}
       <div className="bg-white rounded-xl overflow-hidden shadow-card mb-8">
-        <div className="h-48 md:h-64 overflow-hidden">
+        {/* <div className="h-48 md:h-64 overflow-hidden">
           <img 
             src={cityImage} 
             alt={`${weather.city}, ${weather.country}`} 
             className="w-full h-full object-cover transition duration-300 hover:scale-105"
           />
-        </div>
+        </div> */}
         <div className="p-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div>

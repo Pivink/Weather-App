@@ -53,7 +53,7 @@ const Weather = () => {
           ) : error ? (
             <ErrorMessage message={error} />
           ) : weather ? (
-            <WeatherDisplay weather={weather} cityImage={cityImage} />
+            <WeatherDisplay weather={weather} cityImage={cityImage} style={{display:'none'}} />
           ) : (
             <div className="text-center py-12">
               <h2 className="text-2xl mb-4">No Weather Data</h2>
